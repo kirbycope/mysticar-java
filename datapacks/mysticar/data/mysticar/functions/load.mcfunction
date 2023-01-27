@@ -42,4 +42,4 @@ setblock -1 66 0 minecraft:black_stained_glass
 setblock 0 66 0 minecraft:glow_lichen[up=true]
 setblock 0 66 1 minecraft:glow_lichen[up=true]
 # Car 1 - Roof
-fill 1 66 0 -1 66 0
+fill 1 67 0 -1 67 1 minecraft:black_carpet
