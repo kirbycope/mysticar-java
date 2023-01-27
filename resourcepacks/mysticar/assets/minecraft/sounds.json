@@ -2,7 +2,7 @@
     "mysticar.beep.beep": {
          "sounds":[
              {
-                 "name": "mysticar/beep-beep",
+                 "name": "mysticar/beep_beep",
                  "weight": 1
              } 
          ]
