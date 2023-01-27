@@ -2,7 +2,7 @@
     "entity.beep.beep": {
          "sounds":[
              {
-                 "name": "beep-beep",
+                 "name": "sounds/beep-beep",
                  "weight": 1
              } 
          ]
