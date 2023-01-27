@@ -1,0 +1,10 @@
+{
+    "entity.beep.beep": {
+         "sounds":[
+             {
+                 "name": "beep-beep",
+                 "weight": 1
+             } 
+         ]
+    }
+}
