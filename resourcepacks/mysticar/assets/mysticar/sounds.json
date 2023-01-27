@@ -1,8 +1,8 @@
 {
-    "entity.beep.beep": {
+    "mysticar.beep.beep": {
          "sounds":[
              {
-                 "name": "sounds/beep-beep",
+                 "name": "mysticar/beep-beep",
                  "weight": 1
              } 
          ]
