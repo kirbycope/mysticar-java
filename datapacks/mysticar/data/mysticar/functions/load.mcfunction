@@ -20,7 +20,7 @@ setblock 1 65 -1 minecraft:acacia_stairs[half=top,facing=west]
 setblock 1 65 2 minecraft:acacia_stairs[half=top,facing=west]
 setblock -1 65 2 minecraft:acacia_stairs[half=top,facing=east]
 # Car - Engine
-setblock 0 65 -2 minecraft:anvilanvil[facing=north]
+setblock 0 65 -2 minecraft:anvil[facing=north]
 # Car - Head Lights
 setblock -1 65 -3 minecraft:oak_button[facing=north]
 setblock 0 65 -3 minecraft:oak_wall_sign[facing=north]{Text1:"\"|||||||||||||||||||||||||||||||||||||||||||||\"",Text2:"\"|||||||||||||||||||||||||||||||||||||||||||||\"",Text3:"\"|||||||||||||||||||||||||||||||||||||||||||||\"",Text4:"\"|||||||||||||||||||||||||||||||||||||||||||||\""}
