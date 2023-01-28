@@ -1,3 +1,6 @@
+# Car 1 = Facing North
+# Car 2 = Facing South
+
 # Car 1 - Frame
 fill -1 64 -2 1 64 3 minecraft:dark_oak_slab[type=top]
 # Car 1 - Tires
@@ -43,3 +46,19 @@ setblock 0 66 0 minecraft:glow_lichen[up=true]
 setblock 0 66 1 minecraft:glow_lichen[up=true]
 # Car 1 - Roof
 fill 1 67 0 -1 67 1 minecraft:black_carpet
+
+# Car 2 - Frame
+fill -1 69 -2 1 69 3 minecraft:dark_oak_slab[type=top]
+# Car 2 - Tires
+setblock -1 69 -1 minecraft:obsidian
+setblock 1 69 -1 minecraft:obsidian
+setblock 1 69 2 minecraft:obsidian
+setblock -1 69 2 minecraft:obsidian
+# Car 2 - Rims
+setblock -2 69 -1 minecraft:stone_button[facing=west]
+setblock 2 69 -1 minecraft:stone_button[facing=east]
+setblock 2 69 2 minecraft:stone_button[facing=east]
+setblock -2 69 2 minecraft:stone_button[facing=west]
+# Car 2 - Body
+fill -1 70 -2 1 70 3 minecraft:orange_concrete
+fill 0 70 -1 0 70 1 minecraft:air
