@@ -1,10 +1,8 @@
 {
-    "mysticar.beep.beep": {
+    "mysticar.horn": {
+        "category": "master",
         "sounds": [
-            {
-                "name": "mysticar/beep_beep",
-                "weight": 1
-            }
+            "mysticar/beep_beep"
         ]
     }
 }
