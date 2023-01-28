@@ -2,10 +2,10 @@
 execute as @a[tag=!init] run function mysticar:init-player
 
 # Move Car 1 - Facing East
-#execute as @p at @s if entity @s[y_rotation=-100..-80] run clone -2 64 -3 2 68 4 ~-2 ~-1 ~-4
+execute as @p at @s if entity @s[y_rotation=-100..-80] run clone -4 79 -6 4 82 6 ~-4 ~-1 ~-6
 # Move Car 1 - Facing South
-#execute as @p at @s if entity @s[y_rotation=-10..10] run clone -2 64 -3 2 68 4 ~-2 ~-1 ~-4
+execute as @p at @s if entity @s[y_rotation=-10..10] run clone -4 69 -6 4 72 6 ~-4 ~-1 ~-6
 # Move Car 1 - Facing West
-#execute as @p at @s if entity @s[y_rotation=80..100] run clone -2 64 -3 2 68 4 ~-2 ~-1 ~-4
+execute as @p at @s if entity @s[y_rotation=80..100] run clone -4 74 -6 4 77 6 ~-3 ~-1 ~-6
 # Move Car 1 - Facing North
-execute as @p at @s if entity @s[y_rotation=170..190] run clone -4 64 -6 4 68 6 ~-4 ~-1 ~-7
+execute as @p at @s if entity @s[y_rotation=170..190] run clone -4 64 -6 4 67 6 ~-4 ~-1 ~-7
