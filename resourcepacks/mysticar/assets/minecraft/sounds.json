@@ -1,7 +1,10 @@
 {
-    "mysticar.horn": {
+    "keyboard": {
         "sounds": [
-            "mysticar/beep_beep"
+            {
+                "name": "mysticar/beep_beep",
+                "weight": 1
+            }
         ]
     }
 }
