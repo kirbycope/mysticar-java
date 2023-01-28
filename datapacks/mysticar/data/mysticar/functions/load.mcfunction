@@ -19,15 +19,21 @@ setblock -1 65 -1 minecraft:acacia_stairs[half=top,facing=east]
 setblock 1 65 -1 minecraft:acacia_stairs[half=top,facing=west]
 setblock 1 65 2 minecraft:acacia_stairs[half=top,facing=west]
 setblock -1 65 2 minecraft:acacia_stairs[half=top,facing=east]
+# Car - Door Handles
+setblock -2 65 0 minecraft:oak_button[facing=west]
+setblock 2 65 0 minecraft:oak_button[facing=east]
 # Car - Engine
 setblock 0 65 -2 minecraft:anvil[facing=north]
+# Car - Horn
+setblock 0 65 -1 minecraft:command_block{Command:"playsound minecraft:mysticar player @a ~ ~ ~ 100"}
+setblock 0 65 0 minecraft:polished_blackstone_button[facing=south]
 # Car - Head Lights
 setblock -1 65 -3 minecraft:oak_button[facing=north]
 setblock 0 65 -3 minecraft:oak_wall_sign[facing=north]{Text1:'"|||||||||||||||||||||||||||||||||||||||||||||"',Text2:'"|||||||||||||||||||||||||||||||||||||||||||||"',Text3:'"|||||||||||||||||||||||||||||||||||||||||||||"',Text4:'"|||||||||||||||||||||||||||||||||||||||||||||"'}
 setblock 1 65 -3 minecraft:oak_button[facing=north]
 # Car - Tail Lights
 setblock 1 65 4 minecraft:oak_button[facing=south]
-setblock 0 65 4 minecraft:oak_wall_sign[facing=south]{Text2:'"MYSTICAT"'}
+setblock 0 64 4 minecraft:oak_wall_sign[facing=south]{Text2:'"MYSTICAT"'}
 setblock -1 65 4 minecraft:oak_button[facing=south]
 # Car - Racing Stripe
 setblock 0 66 -2 minecraft:orange_carpet
@@ -67,15 +73,21 @@ setblock -1 70 -1 minecraft:acacia_stairs[half=top,facing=east]
 setblock 1 70 -1 minecraft:acacia_stairs[half=top,facing=west]
 setblock 1 70 2 minecraft:acacia_stairs[half=top,facing=west]
 setblock -1 70 2 minecraft:acacia_stairs[half=top,facing=east]
+# Car - Door Handles
+setblock -2 70 1 minecraft:oak_button[facing=west]
+setblock 2 70 1 minecraft:oak_button[facing=east]
 # Car - Engine
 setblock 0 70 3 minecraft:anvil[facing=south]
+# Car - Horn
+setblock 0 70 2 minecraft:command_block{Command:"playsound minecraft:mysticar player @a ~ ~ ~ 100"}
+setblock -1 70 1 minecraft:polished_blackstone_button[facing=north]
 # Car - Head Lights
 setblock 1 70 4 minecraft:oak_button[facing=south]
 setblock 0 70 4 minecraft:oak_wall_sign[facing=south]{Text1:'"|||||||||||||||||||||||||||||||||||||||||||||"',Text2:'"|||||||||||||||||||||||||||||||||||||||||||||"',Text3:'"|||||||||||||||||||||||||||||||||||||||||||||"',Text4:'"|||||||||||||||||||||||||||||||||||||||||||||"'}
 setblock -1 70 4 minecraft:oak_button[facing=south]
 # Car - Tail Lights
 setblock -1 70 -3 minecraft:oak_button[facing=north]
-setblock 0 70 -3 minecraft:oak_wall_sign[facing=north]{Text2:'"MYSTICAT"'}
+setblock 0 69 -3 minecraft:oak_wall_sign[facing=north]{Text2:'"MYSTICAT"'}
 setblock 1 70 -3 minecraft:oak_button[facing=north]
 # Car - Racing Stripe
 setblock 0 71 -2 minecraft:orange_carpet
@@ -115,15 +127,21 @@ setblock 1 75 -1 minecraft:acacia_stairs[half=top,facing=south]
 setblock 1 75 1 minecraft:acacia_stairs[half=top,facing=north]
 setblock -2 75 1 minecraft:acacia_stairs[half=top,facing=north]
 setblock -2 75 -1 minecraft:acacia_stairs[half=top,facing=south]
+# Car - Door Handles
+setblock 0 75 -2 minecraft:oak_button[facing=north]
+setblock 0 75 2 minecraft:oak_button[facing=south]
 # Car - Engine
 setblock 2 75 0 minecraft:anvil[facing=east]
+# Car - Horn
+setblock 1 75 0 minecraft:command_block[facing=east]{Command:"playsound minecraft:mysticar player @a ~ ~ ~ 100"}
+setblock 0 75 0 minecraft:polished_blackstone_button[facing=west]
 # Car - Head Lights
 setblock 3 75 -1 minecraft:oak_button[facing=east]
 setblock 3 75 0 minecraft:oak_wall_sign[facing=east]{Text1:'"|||||||||||||||||||||||||||||||||||||||||||||"',Text2:'"|||||||||||||||||||||||||||||||||||||||||||||"',Text3:'"|||||||||||||||||||||||||||||||||||||||||||||"',Text4:'"|||||||||||||||||||||||||||||||||||||||||||||"'}
 setblock 3 75 1 minecraft:oak_button[facing=east]
 # Car - Tail Lights
 setblock -4 75 1 minecraft:oak_button[facing=west]
-setblock -4 75 0 minecraft:oak_wall_sign[facing=west]{Text2:'"MYSTICAT"'}
+setblock -4 74 0 minecraft:oak_wall_sign[facing=west]{Text2:'"MYSTICAT"'}
 setblock -4 75 -1 minecraft:oak_button[facing=west]
 # Car - Racing Stripe
 setblock 2 76 0 minecraft:orange_carpet
@@ -163,15 +181,21 @@ setblock 1 80 -1 minecraft:acacia_stairs[half=top,facing=south]
 setblock 1 80 1 minecraft:acacia_stairs[half=top,facing=north]
 setblock -2 80 1 minecraft:acacia_stairs[half=top,facing=north]
 setblock -2 80 -1 minecraft:acacia_stairs[half=top,facing=south]
+# Car - Door Handles
+setblock 0 75 -2 minecraft:oak_button[facing=north]
+setblock 0 75 2 minecraft:oak_button[facing=south]
 # Car - Engine
 setblock -3 80 0 minecraft:anvil[facing=west]
+# Car - Horn
+setblock -2 80 0 minecraft:command_block[facing=west]{Command:"playsound minecraft:mysticar player @a ~ ~ ~ 100"}
+setblock -1 80 0 minecraft:polished_blackstone_button[facing=east]
 # Car - Head Lights
 setblock -4 80 1 minecraft:oak_button[facing=west]
 setblock -4 80 0 minecraft:oak_wall_sign[facing=west]{Text1:'"|||||||||||||||||||||||||||||||||||||||||||||"',Text2:'"|||||||||||||||||||||||||||||||||||||||||||||"',Text3:'"|||||||||||||||||||||||||||||||||||||||||||||"',Text4:'"|||||||||||||||||||||||||||||||||||||||||||||"'}
 setblock -4 80 -1 minecraft:oak_button[facing=west]
 # Car - Tail Lights
 setblock 3 80 -1 minecraft:oak_button[facing=east]
-setblock 3 80 0 minecraft:oak_wall_sign[facing=east]{Text2:'"MYSTICAT"'}
+setblock 3 79 0 minecraft:oak_wall_sign[facing=east]{Text2:'"MYSTICAT"'}
 setblock 3 80 1 minecraft:oak_button[facing=east]
 # Car - Racing Stripe
 setblock -3 81 0 minecraft:orange_carpet
