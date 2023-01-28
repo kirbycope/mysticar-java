@@ -80,7 +80,7 @@ setblock 2 70 1 minecraft:oak_button[facing=east]
 setblock 0 70 3 minecraft:anvil[facing=south]
 # Car - Horn
 setblock 0 70 2 minecraft:command_block{Command:"playsound minecraft:mysticar player @a ~ ~ ~ 100"}
-setblock -1 70 1 minecraft:polished_blackstone_button[facing=north]
+setblock 0 70 1 minecraft:polished_blackstone_button[facing=north]
 # Car - Head Lights
 setblock 1 70 4 minecraft:oak_button[facing=south]
 setblock 0 70 4 minecraft:oak_wall_sign[facing=south]{Text1:'"|||||||||||||||||||||||||||||||||||||||||||||"',Text2:'"|||||||||||||||||||||||||||||||||||||||||||||"',Text3:'"|||||||||||||||||||||||||||||||||||||||||||||"',Text4:'"|||||||||||||||||||||||||||||||||||||||||||||"'}
@@ -182,8 +182,8 @@ setblock 1 80 1 minecraft:acacia_stairs[half=top,facing=north]
 setblock -2 80 1 minecraft:acacia_stairs[half=top,facing=north]
 setblock -2 80 -1 minecraft:acacia_stairs[half=top,facing=south]
 # Car - Door Handles
-setblock 0 75 -2 minecraft:oak_button[facing=north]
-setblock 0 75 2 minecraft:oak_button[facing=south]
+setblock -1 80 2 minecraft:oak_button[facing=south]
+setblock -1 80 -2 minecraft:oak_button[facing=north]
 # Car - Engine
 setblock -3 80 0 minecraft:anvil[facing=west]
 # Car - Horn
