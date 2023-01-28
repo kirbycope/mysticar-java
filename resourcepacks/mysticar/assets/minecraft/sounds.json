@@ -1,6 +1,5 @@
 {
     "mysticar.horn": {
-        "category": "master",
         "sounds": [
             "mysticar/beep_beep"
         ]
