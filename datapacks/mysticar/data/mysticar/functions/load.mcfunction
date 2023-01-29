@@ -1,3 +1,6 @@
+# Scoreboard(s)
+scoreboard objectives add facing dummy
+
 ######################
 ## 🡱 Facing North 🡱
 # Car - Frame
