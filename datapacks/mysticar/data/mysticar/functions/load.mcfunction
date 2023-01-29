@@ -25,7 +25,6 @@ setblock 2 65 0 minecraft:oak_button[facing=east]
 # Car - Engine
 setblock 0 65 -2 minecraft:anvil[facing=north]
 # Car - Horn
-#setblock 0 65 -1 minecraft:command_block{Command:"playsound minecraft:mysticar player @a ~ ~ ~ 100"}
 setblock 0 65 0 minecraft:polished_blackstone_button[facing=south]
 # Car - Head Lights
 setblock -1 65 -3 minecraft:oak_button[facing=north]
@@ -79,7 +78,6 @@ setblock 2 70 1 minecraft:oak_button[facing=east]
 # Car - Engine
 setblock 0 70 3 minecraft:anvil[facing=south]
 # Car - Horn
-#setblock 0 70 2 minecraft:command_block{Command:"playsound minecraft:mysticar player @a ~ ~ ~ 100"}
 setblock 0 70 1 minecraft:polished_blackstone_button[facing=north]
 # Car - Head Lights
 setblock 1 70 4 minecraft:oak_button[facing=south]
@@ -133,7 +131,6 @@ setblock 0 75 2 minecraft:oak_button[facing=south]
 # Car - Engine
 setblock 2 75 0 minecraft:anvil[facing=east]
 # Car - Horn
-#setblock 1 75 0 minecraft:command_block[facing=east]{Command:"playsound minecraft:mysticar player @a ~ ~ ~ 100"}
 setblock 0 75 0 minecraft:polished_blackstone_button[facing=west]
 # Car - Head Lights
 setblock 3 75 -1 minecraft:oak_button[facing=east]
@@ -187,7 +184,6 @@ setblock -1 80 -2 minecraft:oak_button[facing=north]
 # Car - Engine
 setblock -3 80 0 minecraft:anvil[facing=west]
 # Car - Horn
-#setblock -2 80 0 minecraft:command_block[facing=west]{Command:"playsound minecraft:mysticar player @a ~ ~ ~ 100"}
 setblock -1 80 0 minecraft:polished_blackstone_button[facing=east]
 # Car - Head Lights
 setblock -4 80 1 minecraft:oak_button[facing=west]
