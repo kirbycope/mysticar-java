@@ -1,4 +1,5 @@
 # Scoreboard(s)
+scoreboard objectives add countdown dummy
 scoreboard objectives add crouching minecraft.custom:crouch_one_cm
 scoreboard objectives add facing dummy
 scoreboard objectives add honk_timer dummy
