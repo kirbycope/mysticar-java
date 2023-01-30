@@ -27,17 +27,3 @@ execute if entity @s[y_rotation=80..100,scores={sprinting=1..}] run function mys
 execute if entity @s[y_rotation=80..100,scores={sprinting=0}] unless score @s facing matches 4 run function mysticar:clone/facing-west
 execute if entity @s[y_rotation=80..100,scores={walking=1..}] run function mysticar:clone/facing-west
 execute if entity @s[y_rotation=80..100,scores={walking=0}] unless score @s facing matches 4 run function mysticar:clone/facing-west
-
-# Check/reset "honk" timer
-execute if score @s honk_timer matches 20.. run scoreboard players set @s honk_timer 0
-# Increment timer if running
-execute if score @s honk_timer matches 1.. run scoreboard players add @s honk_timer 1
-
-# Beep beep - Facing North
-execute as @p at @s if block ~ ~ ~-1 minecraft:polished_blackstone_button[powered=true] unless score @s honk_timer matches 1.. run function mysticar:honk
-# Beep beep - Facing East
-execute as @p at @s if block ~1 ~ ~ minecraft:polished_blackstone_button[powered=true] unless score @s honk_timer matches 1.. run function mysticar:honk
-# Beep beep - Facing South
-execute as @p at @s if block ~ ~ ~1 minecraft:polished_blackstone_button[powered=true] unless score @s honk_timer matches 1.. run function mysticar:honk
-# Beep beep - Facing West
-execute as @p at @s if block ~-1 ~ ~ minecraft:polished_blackstone_button[powered=true] unless score @s honk_timer matches 1.. run function mysticar:honk
