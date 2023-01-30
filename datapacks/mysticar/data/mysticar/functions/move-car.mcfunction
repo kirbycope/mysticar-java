@@ -1,22 +1,32 @@
-# Always clone the North-facing car if the player is moving
-execute if entity @s[y_rotation=170..190,scores={moving=1..}] run function mysticar:clone/facing-north
-# If the player isn't moving and isn't already facing North
-execute if entity @s[y_rotation=170..190,scores={moving=0}] unless score @s facing matches 1 run function mysticar:clone/facing-north
+# North
+execute if entity @s[y_rotation=170..190,scores={crouching=1..}] run function mysticar:clone/facing-north
+execute if entity @s[y_rotation=170..190,scores={crouching=0}] unless score @s facing matches 1 run function mysticar:clone/facing-north
+execute if entity @s[y_rotation=170..190,scores={sprinting=1..}] run function mysticar:clone/facing-north
+execute if entity @s[y_rotation=170..190,scores={sprinting=0}] unless score @s facing matches 1 run function mysticar:clone/facing-north
+execute if entity @s[y_rotation=170..190,scores={walking=1..}] run function mysticar:clone/facing-north
+execute if entity @s[y_rotation=170..190,scores={walking=0}] unless score @s facing matches 1 run function mysticar:clone/facing-north
+# East
+execute if entity @s[y_rotation=-100..-80,scores={crouching=1..}] run function mysticar:clone/facing-east
+execute if entity @s[y_rotation=-100..-80,scores={crouching=0}] unless score @s facing matches 2 run function mysticar:clone/facing-east
+execute if entity @s[y_rotation=-100..-80,scores={sprinting=1..}] run function mysticar:clone/facing-east
+execute if entity @s[y_rotation=-100..-80,scores={sprinting=0}] unless score @s facing matches 2 run function mysticar:clone/facing-east
+execute if entity @s[y_rotation=-100..-80,scores={walking=1..}] run function mysticar:clone/facing-east
+execute if entity @s[y_rotation=-100..-80,scores={walking=0}] unless score @s facing matches 2 run function mysticar:clone/facing-east
+# South
+execute if entity @s[y_rotation=-10..10,scores={crouching=1..}] run function mysticar:clone/facing-south
+execute if entity @s[y_rotation=-10..10,scores={crouching=0}] unless score @s facing matches 3 run function mysticar:clone/facing-south
+execute if entity @s[y_rotation=-10..10,scores={sprinting=1..}] run function mysticar:clone/facing-south
+execute if entity @s[y_rotation=-10..10,scores={sprinting=0}] unless score @s facing matches 3 run function mysticar:clone/facing-south
+execute if entity @s[y_rotation=-10..10,scores={walking=1..}] run function mysticar:clone/facing-south
+execute if entity @s[y_rotation=-10..10,scores={walking=0}] unless score @s facing matches 3 run function mysticar:clone/facing-south
 
-# Always clone the East-facing car if the player is moving
-execute if entity @s[y_rotation=-100..-80,scores={moving=1..}] run function mysticar:clone/facing-east
-# If the player isn't moving and isn't already facing East
-execute if entity @s[y_rotation=-100..-80,scores={moving=0}] unless score @s facing matches 2 run function mysticar:clone/facing-east
-
-# Always clone the South-facing car if the player is moving
-execute if entity @s[y_rotation=-10..10,scores={moving=1..}] run function mysticar:clone/facing-south
-# If the player isn't moving and isn't already facing South
-execute if entity @s[y_rotation=-10..10,scores={moving=0}] unless score @s facing matches 3 run function mysticar:clone/facing-south
-
-# Always clone the West-facing car if the player is moving
-execute if entity @s[y_rotation=80..100,scores={moving=1..}] run function mysticar:clone/facing-west
-# If the player isn't moving and isn't already facing West
-execute if entity @s[y_rotation=80..100,scores={moving=0}] unless score @s facing matches 4 run function mysticar:clone/facing-west
+# West
+execute if entity @s[y_rotation=80..100,scores={crouching=1..}] run function mysticar:clone/facing-west
+execute if entity @s[y_rotation=80..100,scores={crouching=0}] unless score @s facing matches 4 run function mysticar:clone/facing-west
+execute if entity @s[y_rotation=80..100,scores={sprinting=1..}] run function mysticar:clone/facing-west
+execute if entity @s[y_rotation=80..100,scores={sprinting=0}] unless score @s facing matches 4 run function mysticar:clone/facing-west
+execute if entity @s[y_rotation=80..100,scores={walking=1..}] run function mysticar:clone/facing-west
+execute if entity @s[y_rotation=80..100,scores={walking=0}] unless score @s facing matches 4 run function mysticar:clone/facing-west
 
 # Check/reset "honk" timer
 execute if score @s honk_timer matches 20.. run scoreboard players set @s honk_timer 0
