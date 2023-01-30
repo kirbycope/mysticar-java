@@ -1,3 +1,6 @@
+# Clear raceway
+fill 7 128 40 -7 131 -51 minecraft:air replace
+
 # Player 1 staring position
 setblock -3 128 39 minecraft:glass_pane
 tp @s -3 129 39 facing 0 129 0
