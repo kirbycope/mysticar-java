@@ -1,5 +1,6 @@
 # Clear raceway
 fill 7 128 40 -7 131 -51 minecraft:air replace
+kill @e[type=item]
 
 # Player 1 staring position
 setblock -3 128 39 minecraft:glass_pane
