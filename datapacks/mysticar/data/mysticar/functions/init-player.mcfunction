@@ -14,4 +14,4 @@ setblock -3 128 39 minecraft:glass_pane
 tp @s -3 129 39 facing 0 129 0
 
 # Mysticar Owner's Manual
-give @s written_book{author:Kirbycope,title:Mysticar,pages:['["",{"text":"Start","color":"dark_green","clickEvent":{"action":"run_command","value":"/trigger race_timer add 1"}},{"text":" race","color":"reset"}]'],display:{Lore:["Mysticar Owner's Manual"]}}
+give @s written_book{author:Kirbycope,title:Mysticar,pages:['["",{"text":"Start","color":"dark_green","clickEvent":{"action":"run_command","value":"/trigger race_timer set 1"}},{"text":" race","color":"reset"}]'],display:{Lore:["Mysticar Owner's Manual"]}}
