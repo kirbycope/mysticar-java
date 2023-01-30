@@ -6,3 +6,4 @@ summon firework_rocket 0 129 -46 {LifeTime:32,FireworksItem:{id:"firework_rocket
 
 # Stop race
 scoreboard players set @a racing 0
+scoreboard players enable @s racing
