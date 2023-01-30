@@ -2,7 +2,7 @@
 scoreboard objectives add crouching minecraft.custom:crouch_one_cm
 scoreboard objectives add facing dummy
 scoreboard objectives add honk_timer dummy
-scoreboard objectives add race_timer dummy
+scoreboard objectives add race_timer trigger
 scoreboard objectives add sprinting minecraft.custom:sprint_one_cm
 scoreboard objectives add walking minecraft.custom:walk_one_cm
 
