@@ -1,31 +1,32 @@
-# Clone only if facing a new direction
-# if last dir =0, then clone
-# if last_facing=1, and new_facing!=1, then clone
-# if last_facing=2, and new_facing!=2, then clone
-# if last_facing=3, and new_facing!=3, then clone
-# if last_facing=3, and new_facing!=3, then clone
+# Always clone the North-facing car if the player is moving
+execute if entity @s[y_rotation=170..190,scores={moving=1..}] run function mysticar:clone/facing-north
+# If the player isn't moving and isn't already facing North
+execute if entity @s[y_rotation=170..190,scores={moving=0}] unless score @s facing matches 1 run function mysticar:clone/facing-north
 
-# Move Car - Facing North (1)
-execute as @p at @s if entity @s[y_rotation=170..190] run clone -4 64 -6 4 67 6 ~-4 ~-1 ~-7
-#scoreboard players set @s facing 1
+# Always clone the East-facing car if the player is moving
+execute if entity @s[y_rotation=-100..-80,scores={moving=1..}] run function mysticar:clone/facing-east
+# If the player isn't moving and isn't already facing East
+execute if entity @s[y_rotation=-100..-80,scores={moving=0}] unless score @s facing matches 2 run function mysticar:clone/facing-east
 
-# Move Car - Facing East
-execute as @p at @s if entity @s[y_rotation=-100..-80] run clone -4 74 -6 4 77 6 ~-3 ~-1 ~-6
-#scoreboard players set @s facing 2
+# Always clone the South-facing car if the player is moving
+execute if entity @s[y_rotation=-10..10,scores={moving=1..}] run function mysticar:clone/facing-south
+# If the player isn't moving and isn't already facing South
+execute if entity @s[y_rotation=-10..10,scores={moving=0}] unless score @s facing matches 3 run function mysticar:clone/facing-south
 
-# Move Car - Facing South
-execute as @p at @s if entity @s[y_rotation=-10..10] run clone -4 69 -6 4 72 6 ~-4 ~-1 ~-6
-#scoreboard players set @s facing 3
+# Always clone the West-facing car if the player is moving
+execute if entity @s[y_rotation=80..100,scores={moving=1..}] run function mysticar:clone/facing-west
+# If the player isn't moving and isn't already facing West
+execute if entity @s[y_rotation=80..100,scores={moving=0}] unless score @s facing matches 4 run function mysticar:clone/facing-west
 
-# Move Car - Facing West
-execute as @p at @s if entity @s[y_rotation=80..100] run clone -4 79 -6 4 82 6 ~-4 ~-1 ~-6
-#scoreboard players set @s facing 4
+# Check/reset "honk" timer
+execute if score @s honk_timer matches 20.. run scoreboard players set @s honk_timer 0
+execute if score @s honk_timer matches 1.. run scoreboard players add @s honk_timer 1
 
 # Beep beep - Facing East
-execute if block ~1 ~ ~ minecraft:polished_blackstone_button[powered=true] run tell playsound minecraft:mysticar player @a ~ ~ ~ 100
+execute as @p at @s if block ~1 ~ ~ minecraft:polished_blackstone_button[powered=true] unless score @s honk_timer matches 1.. run function mysticar:honk
 # Beep beep - Facing South
-execute if block ~ ~ ~1 minecraft:polished_blackstone_button[powered=true] run tell playsound minecraft:mysticar player @a ~ ~ ~ 100
+execute as @p at @s if block ~ ~ ~1 minecraft:polished_blackstone_button[powered=true] unless score @s honk_timer matches 1.. run function mysticar:honk
 # Beep beep - Facing West
-execute if block ~1 ~ ~ minecraft:polished_blackstone_button[powered=true] run tell playsound minecraft:mysticar player @a ~ ~ ~ 100
+execute as @p at @s if block ~-1 ~ ~ minecraft:polished_blackstone_button[powered=true] unless score @s honk_timer matches 1.. run function mysticar:honk
 # Beep beep - Facing North
-execute if block ~ ~ ~-1 minecraft:polished_blackstone_button[powered=true] run tell playsound minecraft:mysticar player @a ~ ~ ~ 100
+execute as @p at @s if block ~ ~ ~-1 minecraft:polished_blackstone_button[powered=true] unless score @s honk_timer matches 1.. run function mysticar:honk

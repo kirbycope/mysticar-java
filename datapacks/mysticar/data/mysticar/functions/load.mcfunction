@@ -1,5 +1,8 @@
 # Scoreboard(s)
 scoreboard objectives add facing dummy
+scoreboard objectives add honking dummy
+scoreboard objectives add honk_timer dummy
+scoreboard objectives add moving minecraft.custom:walk_one_cm
 
 ######################
 ## 🡱 Facing North 🡱
