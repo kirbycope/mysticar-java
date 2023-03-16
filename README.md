@@ -1,6 +1,7 @@
+![Mysticar](/mysticar.png)
+
 # mysticar-java
 The [Mysticat car](https://www.youtube.com/watch?v=hbnCJ_zfWYg) for Minecraft Java Edition
-![Mysticar](/mysticar.png)
 
 ## Installation
 Use an existing world that is already setup to use the datapack.
